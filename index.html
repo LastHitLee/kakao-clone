@@ -4,52 +4,22 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Selctors and Pseudo Selectors</title>
+    <title>Transitions</title>
     <style>
-      /* input[required="required"] {
-        background-color: red;
-      }
-      .box:nth-child(2n-1) {
-        background-color: pink;
-      } */
-      .container > .box {
-        background-color: yellow;
-      }
-      .box {
-        border: 1px solid yellow;
-      }
       .box {
         background-color: green;
-        display: block;
-        height: 100px;
-        border: 1px solid black;
+        color: white;
+        transition: all 0.5s ease-in-out;
       }
-      .child {
-        background-color: purple;
-        width: 40px;
+      .box:hover {
+        background-color: red;
+        color: blue;
       }
     </style>
   </head>
   <body>
-    <div class="container">
-      <div class="box">
-        <div class="box child"></div>
-      </div>
-      <div class="box"></div>
-      <div class="box"></div>
-      <div class="box"></div>
-      <div class="box"></div>
-      <div class="box"></div>
-      <div class="box"></div>
-      <div class="box"></div>
-      <div class="box"></div>
-      <div class="box"></div>
-      <div class="box"></div>
-      <div class="box"></div>
-      <div class="box">
-        <input type="password" required="required" />
-        <input type="submit" required="required" />
-      </div>
-    </div>
+    <span class="box">
+      Text
+    </span>
   </body>
 </html>
