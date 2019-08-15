@@ -4,22 +4,30 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Transitions</title>
+    <title>Transformations</title>
     <style>
       .box {
-        background-color: green;
-        color: white;
-        transition: all 0.5s ease-in-out;
+        width: 500px;
+        height: 500px;
+        background: red;
+        animation: 5s scaleandrotatesquare infinite ease-in-out;
       }
-      .box:hover {
-        background-color: red;
-        color: blue;
+      @keyframes scaleandrotatesquare {
+        0% {
+          transform: none;
+        }
+        50% {
+          transform: rotate(1turn) scale(0.5, 0.5);
+          color: white;
+        }
+        100% {
+          transform: none;
+          color: blue;
+        }
       }
     </style>
   </head>
   <body>
-    <span class="box">
-      Text
-    </span>
+    <div class="box">111</div>
   </body>
 </html>
